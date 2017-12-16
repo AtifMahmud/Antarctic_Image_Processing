@@ -47,25 +47,21 @@ end
 
 x=linspace(1,183,341);
 figure
+title('Change in ice area');
 plot(x,y_val);
+
 
 %% Using polyfit to model ice change as polynomial regression
 
 poly=polyfit(x,y_val,3); % n=3
 val=polyval(poly,x);
- 
-% % Source:
-% % https://www.mathworks.com/help/matlab/creating_plots/add-title-axis-labels-and-legend-to-graph.html
 
-figure
-xlabel('Days');
-ylabel('Percentage change in ice-area'); 
-plot(x,y_val);
 
 % Source: https://www.mathworks.com/matlabcentral/newsreader/view_thread/2131
 figure
+xlabel('Days');
+ylabel('Percentage change in ice-area'); 
+title('Model as polynomial regression');
 plot(x,val, 'Color', 'red');  
-
-
 
 exp=-3.29472397891272e-06;
