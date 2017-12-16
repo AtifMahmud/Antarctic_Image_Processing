@@ -16,4 +16,4 @@ The code was slightly modified and refactored from the original version. The ent
 
 ## Files/Modules
 
-**ExtractFrames.m**: Extracts all the frames and relevant metadata from the video. The video has a total of 3081 frames, but for the purposes of this project, we will only need to work with frames 1363-1703.
+* **ExtractFrames.m**: Extracts all the frames and relevant metadata from the video. The video has a total of 3081 frames, but for the purposes of this project, we will only need to work with frames 1359-1699 (in the project, I worked with frames 1363-1703) 
